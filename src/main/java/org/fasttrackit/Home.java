@@ -5,9 +5,9 @@ public class Home {
     String kennel;
     String crate;
     String dogBed;
-    int kennelPrice;
-    int cratePrice;
-    int dogBedPrice;
+    double kennelPrice;
+    double cratePrice;
+    double dogBedPrice;
     boolean cleanedKennel;
     boolean cleanedCrate;
     boolean cleanedDogBed;
