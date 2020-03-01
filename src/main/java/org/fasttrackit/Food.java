@@ -5,7 +5,7 @@ public class Food {
     String foodOne;
     String foodTwo;
     String foodThree;
-    int quantity;
+    int foodQuantity;
     int foodOnePrice;
     int foodTwoPrice;
     int foodThreePrice;
