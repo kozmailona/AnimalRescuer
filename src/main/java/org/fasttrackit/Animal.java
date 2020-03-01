@@ -11,6 +11,7 @@ public class Animal {
     int healthLevel;
     int hungerLevel;
     int spiritLevel;
-    double wightOfAnimal;
+    double weightOfAnimal;
+
 
 }
