@@ -1,5 +1,7 @@
 package org.fasttrackit;
 
+import java.util.Date;
+
 /**
  * Hello world!
  *
@@ -60,6 +62,7 @@ public class App
             foodReference.foodTwoPrice = 70;
             foodReference.foodThreePrice = 80;
             foodReference.foodAvailability = true;
+            foodReference.date = new Date(2022,12,12);
 
 
         //Grooming
