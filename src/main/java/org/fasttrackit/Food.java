@@ -1,4 +1,5 @@
 package org.fasttrackit;
+import java.util.Date;
 
 public class Food {
 
@@ -10,5 +11,6 @@ public class Food {
     int foodTwoPrice;
     int foodThreePrice;
     boolean foodAvailability;
-
+    Date date = new Date();
+    
 }
