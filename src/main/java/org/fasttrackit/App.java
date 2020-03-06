@@ -12,16 +12,17 @@ public class App
 
         //Activity
     Activity activityReference = new Activity();
-        activityReference.name = "hoodie";
+        activityReference.name = "playing";
         activityReference.location = "park";
         activityReference.duration = 1.5;
 
 
         //Adopter
-    Adopter adopter = new Adopter()
+    Adopter adopter = new Adopter();
         adopter.age = 22;
         adopter.name = "Anne";
         adopter.availableMoney = 500;
+
 
 
         //Animal
@@ -29,7 +30,7 @@ public class App
         animal.name = "Jack";
         animal.colour = "black";
         animal.species = "dog";
-        animal.getFavouriteFood = "Pedigree";
+        animal.favouriteFood = "Pedigree";
         animal.favouriteActivity = "playing";
 
 
@@ -37,6 +38,7 @@ public class App
     Clothes clothes = new Clothes();
         clothes.name = "hoodie";
         clothes.price = 40;
+
 
 
         //Food
@@ -61,8 +63,8 @@ public class App
 
         //Vet
     Vet vet = new Vet();
-        vet.vetName = "Jason";
-        vet.vetSpetialization = "General vet";
+        vet.name = "Jason";
+        vet.specialization = "General vet";
         vet.medicinesAtVet = "Vitamins and vaccinations";
 
 
@@ -71,6 +73,12 @@ public class App
         weather.outsideTemperature = "Rainy";
         weather.temperatureInCelsius = 22.5;
 
+
+        System.out.println("Hey! I`m " + adopter.name + ".");
+        System.out.print("My dog is " + animal.name + ". ");
+        System.out.println("His favourite activity is " + activityReference.name + " in the " + activityReference.location + ".");
+        System.out.println("He used to be afraid of the vet, " + vet.name + ". Now Jack loves him... since he gives " +
+                "it " + food.name + " treats every time they meet.");
 
 
 
