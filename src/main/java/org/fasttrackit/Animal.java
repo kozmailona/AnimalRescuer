@@ -6,10 +6,10 @@ public class Animal {
     String name;
     String colour;
     String species;
-    String getFavouriteFood;
+    String favouriteFood;
     String favouriteActivity;
     String favouriteToy;
-    String FavouriteLeash;
+    String favouriteLeash;
     int age;
     int healthLevel;
     int hungerLevel;
