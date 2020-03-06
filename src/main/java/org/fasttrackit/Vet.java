@@ -2,8 +2,8 @@ package org.fasttrackit;
 
 public class Vet {
 
-    String vetName;
-    String vetSpetialization;
+    String name;
+    String specialization;
     String medicinesAtVet;
     int medicinePrice;
     int vaccinationPrice;
