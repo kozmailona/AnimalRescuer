@@ -2,16 +2,19 @@ package org.fasttrackit;
 
 public class Animal {
 
-    String animalName;
-    String colourOfAnimal;
-    String animalSpecies;
-    String favouriteFood;
+    
+    String name;
+    String colour;
+    String species;
+    String getFavouriteFood;
     String favouriteActivity;
-    int animalAge;
+    String favouriteToy;
+    String FavouriteLeash;
+    int age;
     int healthLevel;
     int hungerLevel;
     int spiritLevel;
-    double weightOfAnimal;
-
+    double weightAnimal;
+    boolean chip;
 
 }

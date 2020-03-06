@@ -4,9 +4,8 @@ public class Vet {
 
     String vetName;
     String vetSpetialization;
-    String medicines;
+    String medicinesAtVet;
     int medicinePrice;
     int vaccinationPrice;
-    boolean chip;
 
 }

@@ -11,105 +11,68 @@ public class App
     public static void main( String[] args ) {
 
         //Activity
-        Activity activityReference = new Activity();
-            activityReference.activityOne = "playing";
-            activityReference.activityTwo = "sleeping";
-            activityReference.activityThree = "bathing";
-            activityReference.favouriteToy = "duck;";
-            activityReference.favouriteLeash = "red one";
-            activityReference.numberOfToys = 10;
-            activityReference.numberOfLeashes = 3;
+    Activity activityReference = new Activity();
+        activityReference.name = "hoodie";
+        activityReference.location = "park";
+        activityReference.duration = 1.5;
 
 
         //Adopter
-        Adopter adopterReference = new Adopter();
-            adopterReference.adopterName = "Anne";
-            adopterReference.availableMoney = 1000;
-            adopterReference.age = 22;
+    Adopter adopter = new Adopter()
+        adopter.age = 22;
+        adopter.name = "Anne";
+        adopter.availableMoney = 500;
 
 
         //Animal
-        Animal animalReference = new Animal();
-            animalReference.animalName = "Jack";
-            animalReference.colourOfAnimal = "black";
-            animalReference.animalSpecies = "dog";
-            animalReference.favouriteFood = "Pedigree";
-            animalReference.favouriteActivity = "playing";
-            animalReference.animalAge = 3;
-            animalReference.healthLevel = 8;
-            animalReference.hungerLevel = 7;
-            animalReference.spiritLevel = 9;
-            animalReference.weightOfAnimal = 4.5;       //kg
+    Animal animal = new Animal();
+        animal.name = "Jack";
+        animal.colour = "black";
+        animal.species = "dog";
+        animal.getFavouriteFood = "Pedigree";
+        animal.favouriteActivity = "playing";
 
 
         //Clothes
-        Clothes clothesReference = new Clothes();
-            clothesReference.hoodie = "Red Pucci";
-            clothesReference.dogVest = "Good2Go";
-            clothesReference.dogTie = "Bow Tie Set";
-            clothesReference.hoodiePrice = 40;
-            clothesReference.dogVestPrice = 50;
-            clothesReference.dogTiePrice = 55;
+    Clothes clothes = new Clothes();
+        clothes.name = "hoodie";
+        clothes.price = 40;
 
 
         //Food
-        Food foodReference = new Food();
-            foodReference.foodOne = "Pedigree";
-            foodReference.foodTwo = "Dog Chow";
-            foodReference.foodThree = "Wellness";
-            foodReference.foodQuantity = 50;        //kg
-            foodReference.foodOnePrice = 50;
-            foodReference.foodTwoPrice = 70;
-            foodReference.foodThreePrice = 80;
-            foodReference.foodAvailability = true;
-            foodReference.date = new Date(2022,12,12);
-
-
-        //Grooming
-        Grooming groomingReference = new Grooming();
-            groomingReference.bathing = true;
-            groomingReference.hairRemoval = false;
-            groomingReference.nailTrimming = true;
-            groomingReference.earCleaning = true;
-            groomingReference.bathPrice = 75;
-            groomingReference.hairRemovalPrice = 80;
-            groomingReference.nailTrimmingPrice = 55;
-            groomingReference.earCleaningPrice = 40;
-            groomingReference.availableMoney = 500;
+    Food food = new Food();
+        food.name = "Pedigree";
+        food.price = 52;
+        food.expirationDate = new Date(2022,12,12);
 
 
         //Home
-        Home homeReference = new Home();
-            homeReference.kennel = "Portable kennel";
-            homeReference.crate = "Brown crate";
-            homeReference.dogBed = "Pedigree dog bed";
-            homeReference.kennelPrice = 200.55;
-            homeReference.cratePrice = 300.80;
-            homeReference.dogBedPrice = 100.50;
-            homeReference.cleanedKennel = true;
-            homeReference.cleanedCrate = false;
-            homeReference.cleanedDogBed = true;
+    Home home = new Home();
+        home.kennels = "Portable kennel";
+        home.kennelPrice = 100;
+
+
+        //Salon
+    Salon salon = new Salon();
+        salon.service = "Hair washing";
+        salon.availableMoney = 500;
+        salon.priceOfService = 55;
 
 
         //Vet
-        Vet vetReference = new Vet();
-            vetReference.vetName = "Jason";
-            vetReference.vetSpetialization = "General vet";
-            vetReference.medicines = "Vitamins and other medicines";
-            vetReference.medicinePrice = 100;
-            vetReference.vaccinationPrice = 150;
-            vetReference.chip = true;
+    Vet vet = new Vet();
+        vet.vetName = "Jason";
+        vet.vetSpetialization = "General vet";
+        vet.medicinesAtVet = "Vitamins and vaccinations";
 
 
         //Weather
-        Weather weatherReference = new Weather();
-            weatherReference.outsideTemperature = 22.5;     //°C
-            weatherReference.sunny = true;
-            weatherReference.rainy = false;
-            weatherReference.windy = true;
-            weatherReference.foggy = false;
+    Weather weather = new Weather();
+        weather.outsideTemperature = "Rainy";
+        weather.temperatureInCelsius = 22.5;
+
+
+
 
     }
-
-
 }

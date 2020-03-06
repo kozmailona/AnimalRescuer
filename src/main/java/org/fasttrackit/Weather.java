@@ -2,10 +2,7 @@ package org.fasttrackit;
 
 public class Weather {
 
-    double outsideTemperature;
-    boolean sunny;
-    boolean rainy;
-    boolean windy;
-    boolean foggy;
+    String outsideTemperature;      //rainy, sunny, windy, foggy
+    double temperatureInCelsius;        // 22.5°C
 
 }

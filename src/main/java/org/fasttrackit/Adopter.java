@@ -2,8 +2,9 @@ package org.fasttrackit;
 
 public class Adopter {
 
-    String adopterName;
+    String name;
     int availableMoney;
     int age;
+
 
 }
