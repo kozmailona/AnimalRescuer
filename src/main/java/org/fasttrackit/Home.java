@@ -2,8 +2,8 @@ package org.fasttrackit;
 
 public class Home {
 
-    String kennels;
-    double kennelPrice;
+    String name;
+    double price;
     boolean cleanedKennel;
 
 
