@@ -15,6 +15,9 @@ public class App
         activityReference.name = "playing";
         activityReference.location = "park";
         activityReference.duration = 1.5;
+    Activity activity2 = new Activity();
+        activity2.name = "walking";
+
 
 
         //Adopter
@@ -32,6 +35,9 @@ public class App
         animal.species = "dog";
         animal.favouriteFood = "Pedigree";
         animal.favouriteActivity = "playing";
+    Animal animal2 = new Animal();
+        animal2.favouriteFood = "Happy meal";
+
 
 
         //Clothes
@@ -50,8 +56,10 @@ public class App
 
         //Home
     Home home = new Home();
-        home.kennels = "Portable kennel";
-        home.kennelPrice = 100;
+        home.name = "Portable kennel";
+        home.price = 100;
+    Home home2 = new Home();
+        home2.name = "Gucci Dog Bed";
 
 
         //Salon
@@ -61,11 +69,12 @@ public class App
         salon.priceOfService = 55;
 
 
+
         //Vet
     Vet vet = new Vet();
         vet.name = "Jason";
         vet.specialization = "General vet";
-        vet.medicinesAtVet = "Vitamins and vaccinations";
+        vet.medicines = "Vitamins and vaccinations";
 
 
         //Weather
