@@ -6,7 +6,7 @@ public class Food {
     String name;
     int price;
     int quantity;
-    boolean foodAvailability;
+    int foodAvailability;       //kg
     Date expirationDate;
 
 
