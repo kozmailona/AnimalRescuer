@@ -1,4 +1,7 @@
 package org.fasttrackit;
 
-public class Golden {
+public class Golden extends Dog {
+
+    boolean energic;
+    boolean guideDog;
 }
