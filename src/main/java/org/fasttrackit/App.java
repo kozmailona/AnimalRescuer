@@ -1,9 +1,10 @@
 package org.fasttrackit;
 
-import java.util.Date;
+import java.time.LocalDate ;
+
 
 /**
- * Hello world!
+ * My first game for my Gucci Puppy!
  *
  */
 public class App 
@@ -51,7 +52,7 @@ public class App
     Food food = new Food();
         food.name = "Pedigree";
         food.price = 52;
-        food.expirationDate = new Date(2022,12,12);
+        LocalDate newDate = LocalDate.now().minusMonths(2);
 
 
         //Home
