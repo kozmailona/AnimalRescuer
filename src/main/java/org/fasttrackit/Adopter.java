@@ -6,5 +6,11 @@ public class Adopter {
     int availableMoney;
     int age;
 
+    public Adopter(String name, int availableMoney) {
+        this.name = name;
+        this.availableMoney = availableMoney;
+    }
 
 }
+
+

@@ -7,4 +7,9 @@ public class Salon {
     int priceOfService;
     int availableMoney;
 
+    public Salon(String service, int priceOfService, int availableMoney) {
+        this.service = service;
+        this.priceOfService = priceOfService;
+        this.availableMoney = availableMoney;
+    }
 }

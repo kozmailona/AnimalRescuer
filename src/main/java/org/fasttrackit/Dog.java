@@ -4,7 +4,9 @@ public class Dog extends Animal {
 
     int senseOfSmell;       // int senseOfSmell = 10; on a 1-10 scale for example
 
-    public void barking() {
-        System.out.println("The dog is barking.");
+    public Dog(String name, String colour, String species, String favouriteFood, String favouriteActivity, int age,
+               int healthLevel, int hungerLevel, int spiritLevel, int senseOfSmell) {
+        super(name, colour, species, favouriteFood, favouriteActivity, age, healthLevel, hungerLevel, spiritLevel);
+        this.senseOfSmell = senseOfSmell;
     }
 }

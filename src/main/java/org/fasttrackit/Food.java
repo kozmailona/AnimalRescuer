@@ -6,8 +6,14 @@ public class Food {
     String name;
     int price;
     int quantity;
-    int foodAvailability;       //kg
+    boolean availability;       //kg
     Date expirationDate;
 
-
+    public Food(String name, int price, int quantity, boolean availability, Date expirationDate) {
+        this.name = name;
+        this.price = price;
+        this.quantity = quantity;
+        this.availability = availability;
+        this.expirationDate = expirationDate;
+    }
 }
