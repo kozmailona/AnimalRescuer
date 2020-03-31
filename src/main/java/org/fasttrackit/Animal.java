@@ -28,5 +28,6 @@ public class Animal {
         this.healthLevel = healthLevel;
         this.hungerLevel = hungerLevel;
         this.spiritLevel = spiritLevel;
+
     }
 }

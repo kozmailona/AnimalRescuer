@@ -11,3 +11,4 @@ public class Activity {
         this.location = location;
     }
 }
+

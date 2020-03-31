@@ -10,7 +10,6 @@ public class Adopter {
         this.name = name;
         this.availableMoney = availableMoney;
     }
-
 }
 
 
