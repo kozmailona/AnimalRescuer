@@ -1,7 +1,7 @@
 package org.fasttrackit;
 
 import java.time.LocalDate ;
-
+import java.util.Date;
 
 /**
  * My first game for my Gucci Puppy!
@@ -10,6 +10,9 @@ import java.time.LocalDate ;
 public class App 
 {
     public static void main( String[] args ) {
+
+
+
 
 //        //Activity
     Activity activityReference = new Activity("playing", "park");
@@ -22,13 +25,11 @@ public class App
 //
 //
 //        //Adopter
-    Adopter adopter = new Adopter("Anne", 500);
-        adopter.age = 22;
-        adopter.name = "Anne";
-        adopter.availableMoney = 500;
+        Adopter adopter = new Adopter("Anne", 500);
+            adopter.age = 22;
+            adopter.name = "Anne";
+            adopter.availableMoney = 500;
 
-//
-//
 //        //Animal
     Animal animal = new Animal("Jack", "black","dog", "Pedigree", "playing",
             2, 8, 8, 8);
@@ -40,8 +41,7 @@ public class App
     Animal animal2 = new Animal("Jack", "black", "dog", "Happy meal", "playing",
             2, 8, 8, 8);
         animal2.favouriteFood = "Happy meal";
-//
-//
+
 //
         //Clothes
 
@@ -52,18 +52,21 @@ public class App
 //
 //
 //        //Food
-   // Food food = new Food("Pedigree", 52, 20, true, 2020.04.04.);      //missing expiration date!!!!!!
-//        food.name = "Pedigree";
-//        food.price = 52;
-//        LocalDate newDate = LocalDate.now().minusMonths(2);
-//
-//
+    Food food = new Food("Pedigree", 52, 20, true, new Date(2020-04-04));
+        food.name = "Pedigree";
+        food.price = 52;
+        LocalDate newDate = LocalDate.now().minusMonths(2);
+
+
+        adopter.feed(animal, food);
+        adopter.playing(animal, activityReference);
+
 //        //Home
     Home home = new Home("Portable kennel", 100);
-        home.name = "Portable kennel";
-        home.price = 100;
+//        home.name = "Portable kennel";
+//        home.price = 100;
     Home home2 = new Home("Gucci Dog Bed", 100);
-        home2.name = "Gucci Dog Bed";
+         home2.name = "Gucci Dog Bed";
 
 
 //        //Salon
