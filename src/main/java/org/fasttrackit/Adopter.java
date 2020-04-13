@@ -13,30 +13,29 @@ public class Adopter {
     }
     public void feed (Animal animal, Food food) {
 
-//        System.out.println(name + " just gave some " + food.name + " to " + animal.name);
-//
-//        animal.spiritLevel = 3;
-//
-//        if (animal.favouriteFood == food.name) {
-//            animal.spiritLevel++;
-//            System.out.println("Now Jack is happy. This much: " + animal.spiritLevel + ".");
-//        }
-//
-//    }
-//
-//    public void playing(Animal animal, Activity activity) {
-//        animal.spiritLevel = 3;
-//        System.out.println(name + " was " + activity.name + " with " + animal.name + " in the " + activity.location +
-//                ".");
-//
-//
-//        if (activity.name == animal.favouriteActivity) {
-//            animal.spiritLevel++;
-//            System.out.println("Yaay, I love it. I'm happy. This muuch: " + animal.spiritLevel);
-//        } else {
-//            animal.spiritLevel--;
-//            System.out.println("Oh, I don't like it... I'm not in my mood: " + animal.spiritLevel);
-//        }
+        System.out.println(name + " just gave some " + food.getName() + " to " + animal.getName());
+
+        animal.setSpiritLevel(3);
+
+        if (animal.getFavouriteFood() == food.getName()) {
+            animal.setSpiritLevel(animal.getSpiritLevel()+1);
+            System.out.println("Now Jack is happy. This much: " + animal.getSpiritLevel() + ".");
+        }
+
+    }
+
+    public void playing(Animal animal, Activity activity) {
+        animal.setSpiritLevel(3);
+        System.out.println(name + " was " + activity.getName() + " with " + animal.getName() + " in the " + activity.getLocation()+
+                ".");
+
+        if (activity.getName() == animal.getFavouriteActivity()) {
+            animal.setSpiritLevel(animal.getSpiritLevel()+1);
+            System.out.println("Yaay, I love it. I'm happy. This muuch: " + animal.getSpiritLevel());
+        } else {
+            animal.setSpiritLevel(animal.getSpiritLevel()-1);
+            System.out.println("Oh, I don't like it... I'm not in my mood: " + animal.getSpiritLevel());
+        }
 
     }
 
