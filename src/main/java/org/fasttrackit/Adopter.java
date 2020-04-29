@@ -17,7 +17,7 @@ public class Adopter {
 
         animal.setSpiritLevel(3);
 
-        if (animal.getFavouriteFood() == food.getName()) {
+        if (animal.getFavouriteFood().equals(food.getName())) {
             animal.setSpiritLevel(animal.getSpiritLevel()+1);
             System.out.println("Now Jack is happy. This much: " + animal.getSpiritLevel() + ".");
         }
@@ -29,7 +29,7 @@ public class Adopter {
         System.out.println(name + " was " + activity.getName() + " with " + animal.getName() + " in the " + activity.getLocation()+
                 ".");
 
-        if (activity.getName() == animal.getFavouriteActivity()) {
+        if (activity.getName().equals(animal.getFavouriteActivity())) {
             animal.setSpiritLevel(animal.getSpiritLevel()+1);
             System.out.println("Yaay, I love it. I'm happy. This muuch: " + animal.getSpiritLevel());
         } else {
