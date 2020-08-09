@@ -17,4 +17,10 @@ public class Dog extends Animal {
     public void setSenseOfSmell(int senseOfSmell) {
         this.senseOfSmell = senseOfSmell;
     }
+
+    @Override
+    public int increaseSpiritLevel(String favouriteFood, String favouriteActivity) {
+        System.out.println("The dog is wagging its tail.");
+        return 0;
+    }
 }

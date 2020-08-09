@@ -31,6 +31,12 @@ public class Animal {
 
     }
 
+    public int increaseSpiritLevel(String favouriteFood, String favouriteActivity){
+        System.out.println("I'm so happy!! :)");
+        return 0;
+    }
+
+
     public String getName() {
         return name;
     }

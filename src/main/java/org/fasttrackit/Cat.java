@@ -16,4 +16,10 @@ public class Cat extends Animal {
     public void setPurring(boolean purring) {
         this.purring = purring;
     }
+
+    @Override
+    public int increaseSpiritLevel(String favouriteFood, String favouriteActivity) {
+        System.out.println("The cat is purring.");
+        return 0;
+    }
 }
