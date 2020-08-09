@@ -11,6 +11,11 @@ public class App
 {
     public static void main( String[] args ) {
 
+
+        Animal animal = new Animal("Any","brown","justanimal","milk",
+                "walking", 4,7, 8,5);
+        animal.increaseSpiritLevel("milk","walking");
+
         Dog dog = new Dog("Jack","black","dog",
                 "Pedigree", "playing",3,8,8, 9,8);
         dog.increaseSpiritLevel("Pedigree","playing");
