@@ -16,6 +16,7 @@ public class Game {
         System.out.println("Yay! It is an animal rescuer game!");
         initFood();
         initActivities();
+        displayFood();
     }
 
     private void initFood() {
@@ -54,9 +55,6 @@ public class Game {
         activity4.setName("running");
         availableActivities[3] = activity4;
 
-        Activity activity5 = new Activity();
-        activity5.setName("swimming");
-        availableActivities[4] = activity5;
     }
 
     private void displayFood() {
