@@ -1,6 +1,12 @@
 package org.fasttrackit;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Game {
+
+    private List<Food> availableFood = new ArrayList<>();
+    private Activity[] availableActivities = new Activity[5];
 
     private Animal animal;
     private Adopter adopter;
