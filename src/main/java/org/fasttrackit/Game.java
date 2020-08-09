@@ -14,6 +14,7 @@ public class Game {
 
     public void start() {
         System.out.println("Yay! It is an animal rescuer game!");
+        System.out.println();
         initFood();
         initActivities();
         displayFood();
@@ -59,9 +60,10 @@ public class Game {
 
     private void displayFood() {
 
+        System.out.println("The available foods for the puppy are: ");
+
         int foodCounter = 1;
         for (Food food : availableFood) {
-            System.out.println("The available foods for the puppy are: ");
             System.out.println(foodCounter + ": " + food.getName());
             foodCounter++;
         }
