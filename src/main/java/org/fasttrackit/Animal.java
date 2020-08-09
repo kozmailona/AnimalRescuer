@@ -31,6 +31,8 @@ public class Animal {
 
     }
 
+    public Animal() {}
+
     public int increaseSpiritLevel(String favouriteFood, String favouriteActivity){
         System.out.println("I'm so happy!! :)");
         return 0;

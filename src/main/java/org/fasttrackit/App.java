@@ -12,17 +12,14 @@ public class App
     public static void main( String[] args ) {
 
 
-        Animal animal = new Animal("Any","brown","justanimal","milk",
-                "walking", 4,7, 8,5);
-        animal.increaseSpiritLevel("milk","walking");
+        Animal animal = new Animal();
+        animal.increaseSpiritLevel("milk", "walking");
 
-        Dog dog = new Dog("Jack","black","dog",
-                "Pedigree", "playing",3,8,8, 9,8);
+        Dog dog = new Dog();
         dog.increaseSpiritLevel("Pedigree","playing");
 
 
-        Cat cat = new Cat("Mimi","white","cat","Whiskas","sleeping",
-                5,8,9,8);
+        Cat cat = new Cat();
         cat.increaseSpiritLevel("Whiskas","sleeping");
 
 

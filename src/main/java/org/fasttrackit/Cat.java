@@ -9,6 +9,8 @@ public class Cat extends Animal {
         super(name, colour, species, favouriteFood, favouriteActivity, age, healthLevel, hungerLevel, spiritLevel);
     }
 
+    public Cat() {}
+
     public boolean isPurring() {
         return purring;
     }

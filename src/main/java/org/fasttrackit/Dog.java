@@ -10,6 +10,8 @@ public class Dog extends Animal {
         this.senseOfSmell = senseOfSmell;
     }
 
+    public Dog() {}
+
     public int getSenseOfSmell() {
         return senseOfSmell;
     }
