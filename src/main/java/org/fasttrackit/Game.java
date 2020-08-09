@@ -59,7 +59,7 @@ public class Game {
         availableActivities[4] = activity5;
     }
 
-    private void displayTracks() {
+    private void displayFood() {
 
     }
 
