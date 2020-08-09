@@ -61,6 +61,13 @@ public class Game {
 
     private void displayFood() {
 
+        int foodCounter = 1;
+        for (Food food : availableFood) {
+            System.out.println("The available foods for the puppy are: ");
+            System.out.println(foodCounter + ": " + food.getName());
+            foodCounter++;
+        }
+
     }
 
     public Animal getAnimal() {
