@@ -18,6 +18,7 @@ public class Game {
         initFood();
         initActivities();
         displayFood();
+        displayActivities();
     }
 
     private void initFood() {
@@ -66,6 +67,17 @@ public class Game {
         for (Food food : availableFood) {
             System.out.println(foodCounter + ": " + food.getName());
             foodCounter++;
+        }
+    }
+
+    private void displayActivities() {
+
+        System.out.println("The available activities for the puppy are: ");
+
+        for (int i = 0; i < availableActivities.length; i++) {
+            if (availableActivities[i] != null) {
+                System.out.println((i + 1) + ". " + availableActivities[i].getName());
+            }
         }
 
     }
