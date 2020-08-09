@@ -9,7 +9,7 @@ public class Food {
     private boolean availability;       //kg
     private Date expirationDate;
 
-    public Food(String name, int price, int quantity, boolean availability, Date expirationDate) {
+    public Food() {
         this.name = name;
         this.price = price;
         this.quantity = quantity;

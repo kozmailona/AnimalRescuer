@@ -11,6 +11,8 @@ public class App
 {
     public static void main( String[] args ) {
 
+        Game game = new Game();
+        game.start();
 
         Animal animal = new Animal();
         animal.increaseSpiritLevel("milk", "walking");

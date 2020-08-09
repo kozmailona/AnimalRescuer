@@ -6,7 +6,7 @@ public class Activity {
    private String location;        //inside, outside, in the park
    private double duration;       //duration of activity/hour; for example 1.5 (an hour and 30 minutes)
 
-    public Activity(String name, String location) {
+    public Activity() {
         this.name = name;
         this.location = location;
     }
