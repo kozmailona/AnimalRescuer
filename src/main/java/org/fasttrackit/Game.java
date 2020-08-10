@@ -19,6 +19,7 @@ public class Game {
         initActivities();
         displayFood();
         displayActivities();
+        initAnimal();
     }
 
     private void initFood() {
