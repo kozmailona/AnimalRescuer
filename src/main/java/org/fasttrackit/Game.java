@@ -1,5 +1,6 @@
 package org.fasttrackit;
 
+
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
@@ -83,14 +84,15 @@ public class Game {
 
         //note to myself: The character class [a-zA-Z] matches any character from a to z or A to Z.
         try {
-            if(adopterName.matches("[a-zA-Z]"));
-            System.out.println("Yay! " + adopterName + ", we are happy for having you here!");
-        } catch (InputMismatchException e) {
-            System.out.println("Oops! Sorry, you have entered an invalid value. Please, try again!");
+            if(adopterName.matches("[a-zA-Z]+")){       //"+" one or more
+                System.out.println("Yay! " + adopterName + ", we are happy for having you here.");
+            } else {
+                throw new InputMismatchException();}
+            } catch (InputMismatchException e) {
+            System.out.println("Oops! You have entered an invalid value. Please, try again.");
         }
-
-
     }
+
 
     private void displayFood() {
 
