@@ -59,6 +59,16 @@ public class Game {
 
     }
 
+    private void initAnimal() {
+        Animal dog = new Dog();
+        dog.setName("Jack");
+        dog.setAge(5);
+
+        Animal cat = new Cat();
+        cat.setName("Lizzy");
+        cat.setColour("brown");
+    }
+
     private void displayFood() {
 
         System.out.println("The available foods for the puppy are: ");
