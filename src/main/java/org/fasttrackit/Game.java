@@ -1,7 +1,9 @@
 package org.fasttrackit;
 
 import java.util.ArrayList;
+import java.util.InputMismatchException;
 import java.util.List;
+import java.util.Scanner;
 
 public class Game {
 
@@ -20,6 +22,7 @@ public class Game {
         displayFood();
         displayActivities();
         initAnimal();
+        initAdopter();
     }
 
     private void initFood() {
@@ -68,6 +71,25 @@ public class Game {
         Animal cat = new Cat();
         cat.setName("Lizzy");
         cat.setColour("brown");
+    }
+
+    private void initAdopter() {
+
+        Adopter adopter = new Adopter();
+        System.out.println("Hey, we want to know who is the rescuer of this little puppy. Please, enter your name!");
+        Scanner scanner = new Scanner(System.in);
+        String adopterName = scanner.nextLine();
+        adopter.setName(adopterName);
+
+        //note to myself: The character class [a-zA-Z] matches any character from a to z or A to Z.
+        try {
+            if(adopterName.matches("[a-zA-Z]"));
+            System.out.println("Yay! " + adopterName + ", we are happy for having you here!");
+        } catch (InputMismatchException e) {
+            System.out.println("Oops! Sorry, you have entered an invalid value. Please, try again!");
+        }
+
+
     }
 
     private void displayFood() {

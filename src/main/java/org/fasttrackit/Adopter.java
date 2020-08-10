@@ -6,7 +6,7 @@ public class Adopter {
     private int availableMoney;
     private int age;
 
-    public Adopter(String name, int availableMoney) {
+    public Adopter() {
         this.name = name;
         this.availableMoney = availableMoney;
 
