@@ -1,6 +1,7 @@
 package org.fasttrackit;
 
 
+import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
@@ -24,6 +25,7 @@ public class Game {
         displayActivities();
         initAnimal();
         initAdopter();
+        nameAnimal();
     }
 
     private void initFood() {
@@ -65,13 +67,10 @@ public class Game {
     }
 
     private void initAnimal() {
-        Animal dog = new Dog();
+        Dog dog = new Dog();
         dog.setName("Jack");
         dog.setAge(5);
 
-        Animal cat = new Cat();
-        cat.setName("Lizzy");
-        cat.setColour("brown");
     }
 
     private void initAdopter() {
@@ -92,6 +91,47 @@ public class Game {
             System.out.println("Oops! You have entered an invalid value. Please, try again.");
         }
     }
+
+    private void nameAnimal() {
+        System.out.println("Hello, " + adopter.getName() + "Please, give a name to your puppy.");
+
+        Scanner scanner = new Scanner(System.in);
+        String animalName = scanner.nextLine();
+
+    }
+
+    private void requireFeeding() {
+
+        System.out.println("The puppy is hungry. Here are the foods for " + animal.getName());
+
+        int foodCounter = 1;
+        for (Food food : availableFood) {
+            System.out.println(foodCounter + ": " + food.getName());
+            foodCounter++;
+        }
+
+        System.out.println();
+        System.out.println("Select your puppy's favourite food and feed it! ");
+        Scanner scanner = new Scanner(System.in);
+        int chosenFood = scanner.nextInt();
+
+        System.out.println("The food you've chosen: " + chosenFood);
+
+    }
+
+//    private void getSelectedFoodFromUser() throws Exception {
+//        System.out.println("Please, select food!");
+//
+//        try {
+//            int availableFood = ScannerUtils.nextSingleInt();
+//            return tracks[trackNumber - 1];
+//        } catch (InputMismatchException e) {
+//            throw new Exception("You have entered an invalid option.");
+//        } catch (ArrayIndexOutOfBoundsException e) {
+//            throw new RuntimeException("Wrong number entered.");
+//        } finally {
+//            System.out.println("Finally block always executed. ");
+//        }
 
 
     private void displayFood() {
