@@ -13,6 +13,8 @@ public class Game {
     private Activity[] availableActivities = new Activity[4];
 
     private Animal animal;
+    private Dog dog;
+    private Cat cat;
     private Adopter adopter;
     private Vet vet;
 
@@ -76,7 +78,7 @@ public class Game {
     private void initAdopter() {
 
         Adopter adopter = new Adopter();
-        System.out.println("Hey, we want to know who is the rescuer of this little puppy. Please, enter your name!");
+        System.out.println("Please, enter your name!");
         Scanner scanner = new Scanner(System.in);
         String adopterName = scanner.nextLine();
         adopter.setName(adopterName);
@@ -93,16 +95,19 @@ public class Game {
     }
 
     private void nameAnimal() {
-        System.out.println("Hello, " + adopter.getName() + "Please, give a name to your puppy.");
+        System.out.println("Hello, please, give a name to your puppy.");
 
         Scanner scanner = new Scanner(System.in);
         String animalName = scanner.nextLine();
+        dog.setName(animalName);
 
+        System.out.println("Hurray! The puppy's name is " + animalName);
+        System.out.println(dog);
     }
 
     private void requireFeeding() {
 
-        System.out.println("The puppy is hungry. Here are the foods for " + animal.getName());
+        System.out.println("The puppy is hungry. Here are the foods for " + dog.getName());
 
         int foodCounter = 1;
         for (Food food : availableFood) {
