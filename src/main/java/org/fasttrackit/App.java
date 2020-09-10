@@ -17,11 +17,11 @@ public class App
         Animal animal = new Animal();
         animal.increaseSpiritLevel("milk", "walking");
 
-        Dog dog = new Dog();
+        Animal dog = new Dog();
         dog.increaseSpiritLevel("Pedigree","playing");
 
 
-        Cat cat = new Cat();
+        Animal cat = new Cat();
         cat.increaseSpiritLevel("Whiskas","sleeping");
 
 
