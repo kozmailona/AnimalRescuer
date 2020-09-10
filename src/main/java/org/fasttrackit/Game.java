@@ -1,7 +1,5 @@
 package org.fasttrackit;
 
-
-import java.sql.SQLOutput;
 import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.List;
@@ -12,23 +10,25 @@ public class Game {
     private List<Food> availableFood = new ArrayList<>();
     private Activity[] availableActivities = new Activity[4];
 
-    private Animal animal;
-    private Dog dog;
-    private Cat cat;
-    private Adopter adopter;
-    private Vet vet;
+     Animal animal = new Animal();
+     Dog dog = new Dog();
+     Cat cat = new Cat();
+     Adopter adopter = new Adopter();
 
     public void start() {
         System.out.println("Yay! It is an animal rescuer game!");
         System.out.println();
-        initFood();
-        initActivities();
-        displayFood();
-        displayActivities();
-        initAnimal();
         initAdopter();
+        initAnimal();
         nameAnimal();
+        initFood();
         requireFeeding();
+        initActivities();
+        requireActivity();
+
+        while (animal.getSpiritLevel() > 0 && animal.getSpiritLevel() < 10){
+            requireActivity();requireFeeding();
+        }
     }
 
     private void initFood() {
@@ -70,21 +70,13 @@ public class Game {
     }
 
     private void initAnimal() {
-        Animal dog = new Dog();
         dog.setName("Jack");
         dog.setAge(5);
         dog.setColour("black");
-
-        Animal cat = new Cat();
-        cat.setName("Lizzy");
-        cat.setAge(4);
-        cat.setColour("white");
-
     }
 
     private void initAdopter() {
 
-        Adopter adopter = new Adopter();
         System.out.println("Please, enter your name!");
         Scanner scanner = new Scanner(System.in);
         String adopterName = scanner.nextLine();
@@ -102,18 +94,18 @@ public class Game {
     }
 
     private void nameAnimal() {
-        System.out.println("Hello, please, give a name to your puppy.");
+        System.out.println("Please, give a name to your puppy.");
 
         Scanner scanner = new Scanner(System.in);
         String animalName = scanner.nextLine();
-//        animal.setName(animalName);
+        animal.setName(animalName);
 
-        System.out.println("Hurray! The puppy's name is " + animalName);
+        System.out.println("Hurray! The puppy's name is " + animal.getName());
     }
 
     private void requireFeeding() {
 
-        System.out.println("The puppy is hungry. Here are the foods for it:");
+        System.out.println("The puppy is hungry. Here are the foods for " + animal.getName());
        // displayFood();
 
         int foodCounter = 1;
@@ -149,28 +141,28 @@ public class Game {
     }
 
 
-    private void displayFood() {
+//    private void displayFood() {
+//
+//        System.out.println("The available foods for the puppy are: ");
+//
+//        int foodCounter = 1;
+//        for (Food food : availableFood) {
+//            System.out.println(foodCounter + ": " + food.getName());
+//            foodCounter++;
+//        }
+//    }
 
-        System.out.println("The available foods for the puppy are: ");
+//    private void displayActivities() {
+//
+//        System.out.println("The available activities for the puppy are: ");
+//
+//        for (int i = 0; i < availableActivities.length; i++) {
+//            if (availableActivities[i] != null) {
+//                System.out.println((i + 1) + ". " + availableActivities[i].getName());
+//            }
+//        }
 
-        int foodCounter = 1;
-        for (Food food : availableFood) {
-            System.out.println(foodCounter + ": " + food.getName());
-            foodCounter++;
-        }
-    }
-
-    private void displayActivities() {
-
-        System.out.println("The available activities for the puppy are: ");
-
-        for (int i = 0; i < availableActivities.length; i++) {
-            if (availableActivities[i] != null) {
-                System.out.println((i + 1) + ". " + availableActivities[i].getName());
-            }
-        }
-
-    }
+    //}
 
     public Animal getAnimal() {
         return animal;
@@ -186,14 +178,6 @@ public class Game {
 
     public void setAdopter(Adopter adopter) {
         this.adopter = adopter;
-    }
-
-    public Vet getVet() {
-        return vet;
-    }
-
-    public void setVet(Vet vet) {
-        this.vet = vet;
     }
 }
 
