@@ -28,6 +28,7 @@ public class Game {
         initAnimal();
         initAdopter();
         nameAnimal();
+        requireFeeding();
     }
 
     private void initFood() {
@@ -69,9 +70,15 @@ public class Game {
     }
 
     private void initAnimal() {
-        Dog dog = new Dog();
+        Animal dog = new Dog();
         dog.setName("Jack");
         dog.setAge(5);
+        dog.setColour("black");
+
+        Animal cat = new Cat();
+        cat.setName("Lizzy");
+        cat.setAge(4);
+        cat.setColour("white");
 
     }
 
@@ -99,15 +106,15 @@ public class Game {
 
         Scanner scanner = new Scanner(System.in);
         String animalName = scanner.nextLine();
-        dog.setName(animalName);
+//        animal.setName(animalName);
 
         System.out.println("Hurray! The puppy's name is " + animalName);
-        System.out.println(dog);
     }
 
     private void requireFeeding() {
 
-        System.out.println("The puppy is hungry. Here are the foods for " + dog.getName());
+        System.out.println("The puppy is hungry. Here are the foods for it:");
+       // displayFood();
 
         int foodCounter = 1;
         for (Food food : availableFood) {
@@ -124,19 +131,22 @@ public class Game {
 
     }
 
-//    private void getSelectedFoodFromUser() throws Exception {
-//        System.out.println("Please, select food!");
-//
-//        try {
-//            int availableFood = ScannerUtils.nextSingleInt();
-//            return tracks[trackNumber - 1];
-//        } catch (InputMismatchException e) {
-//            throw new Exception("You have entered an invalid option.");
-//        } catch (ArrayIndexOutOfBoundsException e) {
-//            throw new RuntimeException("Wrong number entered.");
-//        } finally {
-//            System.out.println("Finally block always executed. ");
-//        }
+    private void requireActivity() {
+        System.out.println(animal.getName() + " is playful. You can play with your little one. These are the activities" +
+                " you can play: ");
+
+        int activityCounter = 1;
+        for (Activity activity : availableActivities) {
+            System.out.println(activityCounter + ": " + activity.getName());
+            activityCounter++;
+        }
+
+        System.out.println();
+        System.out.println("Select an activity!");
+        Scanner scanner = new Scanner(System.in);
+        int chosenActivity = scanner.nextInt();
+        System.out.println("The activity you have chosen: " + chosenActivity);
+    }
 
 
     private void displayFood() {
